@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IngredientSource : MonoBehaviour
+namespace Assets.Scripts
 {
-    // Start is called before the first frame update
-    void Start()
+    public class IngredientSource : MonoBehaviour
     {
+        public Animator m_Animator;
+        public Ingredient ingredientToDispense;
         
-    }
+        public Cup cup;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void TryToDispense()
+        {
+            if(cup.CanPutIngredient(ingredientToDispense)){
+                m_Animator.SetTrigger("play");
+            }
+        }
+
+        public void Dispense(){
+            cup.PutIngredient(ingredientToDispense);
+        }
     }
 }

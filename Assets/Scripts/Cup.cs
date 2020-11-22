@@ -19,7 +19,7 @@ namespace Assets.Scripts
             Destroy(DisplayedDrink);
             DisplayedDrink = Instantiate(StartCupPrefab, transform.position, Quaternion.identity) as GameObject;
         }
-        public bool TryToPutIngredient(Ingredient newIngredient)
+        public bool CanPutIngredient(Ingredient newIngredient)
         {
             if(inCup.Contains(newIngredient)){
                 return false;
@@ -29,7 +29,7 @@ namespace Assets.Scripts
             }
         }
 
-        private void PutIngredient(Ingredient newIngredient)
+        public void PutIngredient(Ingredient newIngredient)
         {
             inCup.Add(newIngredient);
             ChangeCup();

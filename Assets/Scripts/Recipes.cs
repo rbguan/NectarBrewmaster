@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
+    [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/Recipes", order = 1)]
     public class Recipes : ScriptableObject
     {
         [SerializeField]
@@ -28,9 +29,10 @@ namespace Assets.Scripts
     public class Recipe : ISerializationCallbackReceiver
     {
         [SerializeField]
-        private Ingredient[] _ingredients;
+        public List<Ingredient> _ingredients;
         // public string DrinkName;
         public HashSet<Ingredient> Ingredients = new HashSet<Ingredient>();
+        
         public Ingredient EndIngredient;
 
         public bool doIngredientsMatch(HashSet<Ingredient> inCup){
@@ -38,12 +40,12 @@ namespace Assets.Scripts
         }
         public void OnBeforeSerialize()
         {
-            _ingredients = new Ingredient[Ingredients.Count];
-            int i = 0;
+            _ingredients = new List<Ingredient>();
+            // int i = 0;
             foreach(Ingredient ingredient in Ingredients)
             {
-                _ingredients[i] = ingredient;
-                i++;
+                _ingredients.Add(ingredient);
+                // i++;
             }
         }
 
