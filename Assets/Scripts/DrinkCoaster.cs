@@ -36,6 +36,7 @@ namespace Assets.Scripts
             menuItems = menu.getEndIngredients();
             seatPos = seat.transform.position;
             beeSpawnPos = beeSpawn.transform.position;
+            StartCoroutine(beeLife());
         }
         public void deliverDrink()
         {
@@ -67,6 +68,8 @@ namespace Assets.Scripts
 
         private IEnumerator spawnBee()
         {
+            beeSpawned = true;
+            yield return new WaitForSeconds(Random.Range(0,2f));
             currentBee = Instantiate(beePrefab, beeSpawnPos, beeSpawn.transform.rotation) as GameObject;
             currentBee.transform.parent = transform;
             curState = BeeState.MovingToSeat;
