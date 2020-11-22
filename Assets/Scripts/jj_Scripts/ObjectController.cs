@@ -44,8 +44,8 @@ public class ObjectController : MonoBehaviour, IPointerEnterHandler, IPointerExi
     	currentTime = gazeTimer;
     }
 
-    /*public void TestME(){
+    public void TestME(){
     	Debug.Log("I bwork!");
-    }*/
+    }
 
 }
