@@ -4541,6 +4541,7 @@ GameObject:
   - component: {fileID: 1708110639252870398}
   - component: {fileID: 1708110639252870397}
   - component: {fileID: 1708110639252870396}
+  - component: {fileID: 1708110639252870399}
   m_Layer: 0
   m_Name: JarR
   m_TagString: Untagged
@@ -4604,6 +4605,20 @@ MonoBehaviour:
   ingredientToDispense: {fileID: 11400000, guid: 9ba93bd3fa073fe49babc54a89eb0f6e,
     type: 2}
   cup: {fileID: 1548396927768115442}
+--- !u!64 &1708110639252870399
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708110639252870395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7485899746095949986, guid: edff11c6764382342b8678fde995eb10, type: 3}
 --- !u!23 &1891275816717205833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5244,6 +5259,7 @@ GameObject:
   - component: {fileID: 5626672627735578429}
   - component: {fileID: 5626672627735578428}
   - component: {fileID: 5626672627735578427}
+  - component: {fileID: 5626672627735578430}
   m_Layer: 0
   m_Name: JarM
   m_TagString: Untagged
@@ -5307,6 +5323,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
+--- !u!64 &5626672627735578430
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5626672627735578426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7485899746095949986, guid: edff11c6764382342b8678fde995eb10, type: 3}
 --- !u!1 &5853757451421016923
 GameObject:
   m_ObjectHideFlags: 0
@@ -5321,6 +5351,7 @@ GameObject:
   - component: {fileID: 5853757451421016926}
   - component: {fileID: 5853757451421016925}
   - component: {fileID: 5853757451421016924}
+  - component: {fileID: 5853757451421016927}
   m_Layer: 0
   m_Name: JarL
   m_TagString: Untagged
@@ -5384,6 +5415,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
+--- !u!64 &5853757451421016927
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5853757451421016923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7485899746095949986, guid: edff11c6764382342b8678fde995eb10, type: 3}
 --- !u!33 &5943345832980216031
 MeshFilter:
   m_ObjectHideFlags: 0
