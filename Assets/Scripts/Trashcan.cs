@@ -9,7 +9,9 @@ namespace Assets.Scripts
         public Cup cup;
         public void EmptyCup()
         {
-            cup.ResetCup();
+            if(cup.inCup.Count > 0){ 
+                cup.ResetCup();
+            }
         }
     }
 }

@@ -13,7 +13,8 @@ namespace Assets.Scripts
         public void TryToDispense()
         {
             if(cup.CanPutIngredient(ingredientToDispense)){
-                m_Animator.SetTrigger("clicked");
+                // m_Animator.SetTrigger("clicked");
+                Dispense();
             }
         }
 

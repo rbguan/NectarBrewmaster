@@ -15,22 +15,22 @@ PrefabInstance:
     - target: {fileID: 6315227822087916743, guid: 1d55b0f669bd09744878ee9c90c9bd6e,
         type: 3}
       propertyPath: m_Name
-      value: CupHoney
+      value: CupHoney Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7061481377612447444, guid: 1d55b0f669bd09744878ee9c90c9bd6e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.006506968
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7061481377612447444, guid: 1d55b0f669bd09744878ee9c90c9bd6e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.047
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7061481377612447444, guid: 1d55b0f669bd09744878ee9c90c9bd6e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.922
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7061481377612447444, guid: 1d55b0f669bd09744878ee9c90c9bd6e,
         type: 3}
