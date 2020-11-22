@@ -37,7 +37,7 @@ namespace Assets.Scripts
         public Ingredient EndIngredient;
 
         public bool doIngredientsMatch(HashSet<Ingredient> inCup){
-            return inCup.Equals(Ingredients);
+            return inCup.SetEquals(Ingredients);
         }
         public void OnBeforeSerialize()
         {
