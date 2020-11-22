@@ -30,6 +30,5 @@ MonoBehaviour:
     - {fileID: 11400000, guid: a47bc5e1eea133f488aaa6728f458a00, type: 2}
     - {fileID: 11400000, guid: 9ba93bd3fa073fe49babc54a89eb0f6e, type: 2}
     EndIngredient: {fileID: 11400000, guid: 8a967522788e4e74f92bb543eb531fdc, type: 2}
-  - _ingredients:
-    - {fileID: 11400000, guid: 8b443dc5f5e1a02428bfc23d997d05b7, type: 2}
-    EndIngredient: {fileID: 11400000, guid: 8b443dc5f5e1a02428bfc23d997d05b7, type: 2}
+  - _ingredients: []
+    EndIngredient: {fileID: 11400000, guid: f37fa66f3b847e846815cfce81ffe3c7, type: 2}

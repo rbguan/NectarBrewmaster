@@ -10,20 +10,24 @@ namespace Assets.Scripts
         public HashSet<Ingredient> inCup = new HashSet<Ingredient>();
         public GameObject StartCupPrefab;
         public GameObject DisplayedDrink;
+        public Ingredient currentDrink;
         private Vector3 cupSpawnLocation;
         public float cupSpawnVerticalOffset = .00115f;
         void Awake() 
         {
-            cupSpawnLocation = new Vector3(transform.position.x,transform.position.y,transform.position.x + cupSpawnVerticalOffset);
+            cupSpawnLocation = new Vector3(transform.position.x,transform.position.y,transform.position.z + cupSpawnVerticalOffset);
         }
         void Start()
         {
+            currentDrink = RecipeList.detectRecipe(inCup);
             DisplayedDrink = Instantiate(StartCupPrefab, cupSpawnLocation, transform.rotation) as GameObject;
             DisplayedDrink.transform.parent = transform;
         }
         public void ResetCup()
         {
             Destroy(DisplayedDrink);
+            inCup = new HashSet<Ingredient>();
+            currentDrink = RecipeList.detectRecipe(inCup);
             DisplayedDrink = Instantiate(StartCupPrefab, cupSpawnLocation, Quaternion.identity) as GameObject;
             DisplayedDrink.transform.parent = transform;
         }
@@ -48,6 +52,7 @@ namespace Assets.Scripts
             Ingredient drink = RecipeList.detectRecipe(inCup);
             if(drink != null){
                 Destroy(DisplayedDrink);
+                currentDrink = drink;
                 DisplayedDrink = Instantiate(drink.Model, cupSpawnLocation, Quaternion.identity) as GameObject;
                 DisplayedDrink.transform.parent = transform;
             }
