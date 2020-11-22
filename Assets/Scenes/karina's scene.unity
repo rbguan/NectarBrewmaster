@@ -5299,14 +5299,12 @@ Transform:
   - {fileID: 8055378552112377046}
   - {fileID: 4849518518303462311}
   - {fileID: 2118694197}
-  - {fileID: 1132232307}
   - {fileID: 324952939}
   - {fileID: 287703819}
   - {fileID: 1944044755}
   - {fileID: 2111510865}
   - {fileID: 1738206764}
   - {fileID: 700355244}
-  - {fileID: 1568116642}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
