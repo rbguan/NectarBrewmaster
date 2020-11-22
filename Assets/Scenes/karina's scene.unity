@@ -3971,6 +3971,7 @@ GameObject:
   - component: {fileID: 206895882037343441}
   - component: {fileID: 206895882037343440}
   - component: {fileID: 206895882037343442}
+  - component: {fileID: 206895882037343443}
   m_Layer: 0
   m_Name: DispenserR
   m_TagString: Untagged
@@ -4035,6 +4036,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 2219323779956620504, guid: 739ccc02616132b41ae44dca8453f711, type: 3}
+--- !u!114 &206895882037343443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206895882037343439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &250288978533310931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5490,6 +5504,8 @@ GameObject:
   - component: {fileID: 345167128284135031}
   - component: {fileID: 5943345832980216031}
   - component: {fileID: 5247782156414125700}
+  - component: {fileID: 6358217471192797690}
+  - component: {fileID: 6358217471192797689}
   m_Layer: 0
   m_Name: Placemat? L
   m_TagString: Untagged
@@ -5497,6 +5513,43 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &6358217471192797689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6358217471192797688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ad58134216c29488f4bf2d52ab5e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drinkHeld: {fileID: 0}
+  beePrefab: {fileID: 0}
+  cup: {fileID: 0}
+  cupSpawnVerticalOffset: 0.00115
+  curIngredient: {fileID: 0}
+  menu: {fileID: 0}
+  beeSpawn: {fileID: 0}
+  beeSpawnPos: {x: 0, y: 0, z: 0}
+  seat: {fileID: 0}
+  moveVelocity: {x: 1, y: 1, z: 1}
+  dampTime: 2
+--- !u!64 &6358217471192797690
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6358217471192797688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 5710377511730179173, guid: 25c75fd1a1df67741a2702286bd47243, type: 3}
 --- !u!23 &6426247660909396000
 MeshRenderer:
   m_ObjectHideFlags: 0
