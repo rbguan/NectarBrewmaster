@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientName: RsHoney
   Sprite: {fileID: 0}
-  Model: {fileID: 0}
+  Model: {fileID: -927199367670048503, guid: 1183e66ebe192a54fa7703ff671b5d8c, type: 3}
