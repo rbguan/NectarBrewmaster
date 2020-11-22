@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CupModel : MonoBehaviour
+namespace Assets.Scripts
 {
-    Animator m_animator;
-    void Awake()
+    public class CupModel : MonoBehaviour
     {
-        m_animator.Play("spawn");
+        Animator m_animator;
+        void Awake()
+        {
+            m_animator.Play("spawn");
+        }
+
+
     }
-
-
 }
