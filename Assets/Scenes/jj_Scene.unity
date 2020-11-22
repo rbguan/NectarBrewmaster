@@ -651,7 +651,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5df99811b8b851640a024d70e303e282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gazedAt: 1
+  objectGazedAt:
+    m_PersistentCalls:
+      m_Calls: []
+  gazeTimer: 5
 --- !u!1 &983630982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,16 +1573,21 @@ PrefabInstance:
     - target: {fileID: 3678057460563249786, guid: 81cbc5a695449744b89185baa440ce03,
         type: 3}
       propertyPath: m_Delegates.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3678057460563249786, guid: 81cbc5a695449744b89185baa440ce03,
         type: 3}
       propertyPath: m_Delegates.Array.data[1].eventID
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3678057460563249786, guid: 81cbc5a695449744b89185baa440ce03,
         type: 3}
       propertyPath: m_Delegates.Array.data[2].eventID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3678057460563249786, guid: 81cbc5a695449744b89185baa440ce03,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].eventID
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5078817104349202727, guid: 81cbc5a695449744b89185baa440ce03,
