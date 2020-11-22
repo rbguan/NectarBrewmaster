@@ -17,6 +17,7 @@ namespace Assets.Scripts
             foreach(Recipe r  in _AvailableRecipes)
             {
                 if(r.doIngredientsMatch(inCup)){
+                    Debug.Log(r.EndIngredient.IngredientName);
                     return r.EndIngredient;
                 }
             }
