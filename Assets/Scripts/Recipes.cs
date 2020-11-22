@@ -24,6 +24,15 @@ namespace Assets.Scripts
             return null;
 
         }
+
+        public List<Ingredient> getEndIngredients()
+        {
+            List<Ingredient> endIngredients = new List<Ingredient>();
+            foreach(Recipe r  in _AvailableRecipes){
+                endIngredients.Add(r.EndIngredient);
+            }
+            return endIngredients;
+        }
     }
 
     [System.Serializable]

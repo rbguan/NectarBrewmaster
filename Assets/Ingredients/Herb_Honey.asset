@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e59a1b22f8d00a14191375ab06934da1, type: 3}
-  m_Name: Nectar
+  m_Name: Herb_Honey
   m_EditorClassIdentifier: 
-  IngredientName: Nectar
+  IngredientName: HbHoney
   Sprite: {fileID: 0}
-  Model: {fileID: 6315227822087916743, guid: 1d55b0f669bd09744878ee9c90c9bd6e, type: 3}
+  Model: {fileID: 0}

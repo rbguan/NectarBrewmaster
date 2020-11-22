@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientName: Honey
   Sprite: {fileID: 0}
-  Model: {fileID: 0}
+  Model: {fileID: 1560591285256121607, guid: 1abb7b992c8361a43994800245966f2b, type: 3}

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e59a1b22f8d00a14191375ab06934da1, type: 3}
   m_Name: Rose_Honey
   m_EditorClassIdentifier: 
-  IngredientName: 
+  IngredientName: RsHoney
   Sprite: {fileID: 0}
   Model: {fileID: 0}
