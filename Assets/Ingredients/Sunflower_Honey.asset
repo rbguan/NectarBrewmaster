@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientName: SfHoney
   Sprite: {fileID: 0}
-  Model: {fileID: 0}
+  Model: {fileID: -927199367670048503, guid: beff92cc9bc87d0428c78e2f938a5b3f, type: 3}

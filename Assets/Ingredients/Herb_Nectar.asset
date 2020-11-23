@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientName: HbNectar
   Sprite: {fileID: 0}
-  Model: {fileID: 0}
+  Model: {fileID: -927199367670048503, guid: bc378c9e52a8a914fbcb48eae1903367, type: 3}
