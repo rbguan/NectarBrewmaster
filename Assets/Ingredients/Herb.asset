@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Herb
   m_EditorClassIdentifier: 
   IngredientName: Herb
-  Sprite: {fileID: 0}
-  Model: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: dfbce7e304392954f87c0352f334898f, type: 3}
+  Model: {fileID: 2902223980085554990, guid: dc7cf7c8e8fa9244fa7e511a2072939a, type: 3}

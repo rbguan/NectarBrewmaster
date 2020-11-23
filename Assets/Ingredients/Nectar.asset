@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Nectar
   m_EditorClassIdentifier: 
   IngredientName: Nectar
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: ccd53ad7dcdbfe24db2bc5707d2e197d, type: 3}
   Model: {fileID: 6315227822087916743, guid: 1d55b0f669bd09744878ee9c90c9bd6e, type: 3}
