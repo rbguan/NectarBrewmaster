@@ -32,6 +32,9 @@ namespace Assets.Scripts
         private Vector3 seatPos;
         public Vector3 moveVelocity = new Vector3(1,1,1);
         public float dampTime = 2f;
+        void Awake() {
+            cupSpawnLocation = new Vector3(transform.position.x,transform.position.y,transform.position.z + cupSpawnVerticalOffset);
+        }
         void Start()
         {
             menuItems = menu.getEndIngredients();
@@ -42,9 +45,11 @@ namespace Assets.Scripts
         public void deliverDrink()
         {
             curIngredient = cup.currentDrink;
-            cup.ResetCup();
             drinkHeld = Instantiate(curIngredient.Model, cupSpawnLocation, transform.rotation) as GameObject;
             drinkHeld.transform.parent = transform;
+            cup.ResetCup();
+            
+            
         }
 
         private Ingredient randomMenuItem()
@@ -84,6 +89,7 @@ namespace Assets.Scripts
             beesOrder = randomMenuItem();
             Recipe beeOrderRecipe = allrecipes.getRecipeFromEndIngredient(beesOrder);
             currentBee.GetComponent<Bee>().setRecipeInfo(beeOrderRecipe);
+            currentBee.GetComponent<Bee>().ShowBasicOrder();
             Debug.Log("orderin " + beesOrder.IngredientName);
             yield return null;
         }

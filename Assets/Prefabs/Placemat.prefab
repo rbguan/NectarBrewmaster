@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 5478114370590253065}
   - component: {fileID: 6694909764250187639}
   - component: {fileID: 6694909764250187636}
+  - component: {fileID: 9041431543036056973}
+  - component: {fileID: 2902129248106306063}
   m_Layer: 0
   m_Name: Placemat
   m_TagString: Untagged
@@ -145,11 +147,52 @@ MonoBehaviour:
   cupSpawnVerticalOffset: 0.00115
   curIngredient: {fileID: 0}
   menu: {fileID: 11400000, guid: b1cd5c11da3dc204a8bdd292cfa7d6cf, type: 2}
+  allrecipes: {fileID: 11400000, guid: fa8fe43a148b60241ad61bbe26e8151f, type: 2}
   beeSpawn: {fileID: 8140531902780258330}
   beeSpawnPos: {x: 0, y: 0, z: 0}
   seat: {fileID: 2485871583911015435}
   moveVelocity: {x: 1, y: 1, z: 1}
   dampTime: 2
+--- !u!114 &9041431543036056973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694909764250187637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
+--- !u!114 &2902129248106306063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694909764250187637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df99811b8b851640a024d70e303e282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectGazedAt:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6694909764250187636}
+        m_MethodName: deliverDrink
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gazeTimer: 2
 --- !u!1 &8140531902780258330
 GameObject:
   m_ObjectHideFlags: 0

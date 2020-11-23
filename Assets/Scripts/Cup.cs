@@ -68,11 +68,6 @@ namespace Assets.Scripts
             if(drink != null){
                 Destroy(DisplayedDrink);
                 currentDrink = drink;
-                
-                // Debug.Log("current drink: " + drink.IngredientName);
-                // foreach(Ingredient i in inCup){
-                //     Debug.Log(i.IngredientName);
-                // }
                 DisplayedDrink = Instantiate(drink.Model, cupSpawnLocation, transform.rotation) as GameObject;
                 DisplayedDrink.transform.parent = transform;
             }

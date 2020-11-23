@@ -11,7 +11,5 @@ namespace Assets.Scripts
         {
             m_animator.Play("spawn");
         }
-
-
     }
 }
