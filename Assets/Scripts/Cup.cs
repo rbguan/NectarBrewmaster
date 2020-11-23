@@ -59,6 +59,13 @@ namespace Assets.Scripts
         public void PutIngredient(Ingredient newIngredient)
         {
             inCup.Add(newIngredient);
+            StartCoroutine(waitForPutInAnimation());
+        }
+
+        private IEnumerator waitForPutInAnimation()
+        {
+            //play particles
+            yield return new WaitForSeconds(1f);
             ChangeCup();
         }
 

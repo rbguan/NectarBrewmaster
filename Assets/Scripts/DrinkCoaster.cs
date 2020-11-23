@@ -9,7 +9,8 @@ namespace Assets.Scripts
         MovingToSeat,
         Ordering,
         Waiting,
-        Drinking
+        Drinking,
+        Leaving
     }
     public class DrinkCoaster : MonoBehaviour
     {   
@@ -32,6 +33,7 @@ namespace Assets.Scripts
         private Vector3 seatPos;
         public Vector3 moveVelocity = new Vector3(1,1,1);
         public float dampTime = 2f;
+        public UI_CashierManager moneyManager;
         void Awake() {
             cupSpawnLocation = new Vector3(transform.position.x,transform.position.y,transform.position.z + cupSpawnVerticalOffset);
         }
@@ -42,13 +44,21 @@ namespace Assets.Scripts
             beeSpawnPos = beeSpawn.transform.position;
             StartCoroutine(beeLife());
         }
+
+        private void resetCoaster(){
+            Destroy(drinkHeld.gameObject);
+        }
         public void deliverDrink()
         {
             curIngredient = cup.currentDrink;
             drinkHeld = Instantiate(curIngredient.Model, cupSpawnLocation, transform.rotation) as GameObject;
             drinkHeld.transform.parent = transform;
             cup.ResetCup();
-            
+            if(curIngredient.IngredientName.Equals(beesOrder.IngredientName)){
+                curState = BeeState.Drinking;
+            } else{
+                curState = BeeState.Leaving;
+            }
             
         }
 
@@ -70,7 +80,7 @@ namespace Assets.Scripts
             beeSpawned = true;
             yield return new WaitForSeconds(Random.Range(0,2f));
             currentBee = Instantiate(beePrefab, beeSpawnPos, beeSpawn.transform.rotation) as GameObject;
-            currentBee.transform.parent = transform;
+            // currentBee.transform.parent = transform;
             curState = BeeState.MovingToSeat;
             yield return moveBeeToSeat();
         }
@@ -91,7 +101,7 @@ namespace Assets.Scripts
             currentBee.GetComponent<Bee>().setRecipeInfo(beeOrderRecipe);
             currentBee.GetComponent<Bee>().ShowBasicOrder();
             Debug.Log("orderin " + beesOrder.IngredientName);
-            yield return null;
+            yield return beeWait();
         }
 
         private IEnumerator beeWait()
@@ -100,6 +110,33 @@ namespace Assets.Scripts
             while(curState == BeeState.Waiting){
                 yield return null;
             }
+            if(curState == BeeState.Drinking){
+                yield return beeDrink();
+            } else if(curState == BeeState.Leaving){
+                yield return beeLeave();
+            } else{
+                yield return null;
+            }
+        }
+
+        private IEnumerator beeDrink()
+        {
+            // moneyManager.playerMoney += 10;
+            curState = BeeState.Leaving;
+            yield return beeLeave();
+        }
+
+        private IEnumerator beeLeave()
+        {
+            yield return new WaitForSeconds(1f);
+            resetCoaster();
+            while(Vector3.Distance(currentBee.transform.position, beeSpawnPos) > .1f){
+                currentBee.transform.position = Vector3.SmoothDamp(currentBee.transform.position, beeSpawnPos, ref moveVelocity, dampTime);
+                yield return null;
+            }
+            Destroy(currentBee);
+            
+            beeSpawned = false;
         }
     }
 
