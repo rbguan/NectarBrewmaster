@@ -36,7 +36,7 @@ MonoBehaviour:
     EndIngredient: {fileID: 11400000, guid: abaa964a753ce26448f5a14d16eb9831, type: 2}
   - _ingredients:
     - {fileID: 11400000, guid: a47bc5e1eea133f488aaa6728f458a00, type: 2}
-    - {fileID: 11400000, guid: e3ad2e86b22daf84995b9c01a07d2c2a, type: 2}
+    - {fileID: 11400000, guid: d8cac293235dbab45a2b42328a6427c5, type: 2}
     EndIngredient: {fileID: 11400000, guid: 0bc19c22c8f307644ae43f2a52cdd59f, type: 2}
   - _ingredients: []
     EndIngredient: {fileID: 11400000, guid: f37fa66f3b847e846815cfce81ffe3c7, type: 2}
@@ -51,3 +51,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 8b443dc5f5e1a02428bfc23d997d05b7, type: 2}
     - {fileID: 11400000, guid: e3ad2e86b22daf84995b9c01a07d2c2a, type: 2}
     EndIngredient: {fileID: 11400000, guid: 41283d012da8b07488c71e2917e57ef2, type: 2}
+  - _ingredients:
+    - {fileID: 11400000, guid: d8cac293235dbab45a2b42328a6427c5, type: 2}
+    EndIngredient: {fileID: 11400000, guid: d8cac293235dbab45a2b42328a6427c5, type: 2}
