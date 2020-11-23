@@ -1862,7 +1862,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -8389,7 +8389,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -14333,7 +14333,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -19972,6 +19972,9 @@ MonoBehaviour:
   StartCupPrefab: {fileID: 7192062813485973645, guid: 9680abde9aa233149aee77aa3784869d,
     type: 3}
   DisplayedDrink: {fileID: 0}
+  HerbLeaves: {fileID: 2062295087}
+  RosePetals: {fileID: 986261751}
+  SunflowerSeeds: {fileID: 1653663349}
   currentDrink: {fileID: 0}
   honey: {fileID: 11400000, guid: a47bc5e1eea133f488aaa6728f458a00, type: 2}
   nectar: {fileID: 11400000, guid: e3ad2e86b22daf84995b9c01a07d2c2a, type: 2}

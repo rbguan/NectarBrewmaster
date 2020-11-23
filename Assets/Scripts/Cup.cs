@@ -10,6 +10,9 @@ namespace Assets.Scripts
         public HashSet<Ingredient> inCup = new HashSet<Ingredient>();
         public GameObject StartCupPrefab;
         public GameObject DisplayedDrink;
+        public ParticleSystem HerbLeaves;
+        public ParticleSystem RosePetals;
+        public ParticleSystem SunflowerSeeds;
         public Ingredient currentDrink;
         private Vector3 cupSpawnLocation;
         public Ingredient honey;
@@ -59,12 +62,27 @@ namespace Assets.Scripts
         public void PutIngredient(Ingredient newIngredient)
         {
             inCup.Add(newIngredient);
-            StartCoroutine(waitForPutInAnimation());
+            StartCoroutine(waitForPutInAnimation(newIngredient));
         }
 
-        private IEnumerator waitForPutInAnimation()
+        private IEnumerator waitForPutInAnimation(Ingredient newIngredient)
         {
-            //play particles
+            //play particles RosePetal Sunflower
+            if (newIngredient.IngredientName.Equals("Herb"))
+            {
+                HerbLeaves.Play();
+                Debug.Log("herb");
+            }
+            if (newIngredient.IngredientName.Equals("Rose Petal"))
+            {
+                RosePetals.Play();
+                Debug.Log("rose");
+            }
+            if (newIngredient.IngredientName.Equals("Sunflower"))
+            {
+                SunflowerSeeds.Play();
+                Debug.Log("sunflower");
+            }
             yield return new WaitForSeconds(1f);
             ChangeCup();
         }
