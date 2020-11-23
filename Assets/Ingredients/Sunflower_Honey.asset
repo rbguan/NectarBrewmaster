@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Sunflower_Honey
   m_EditorClassIdentifier: 
   IngredientName: SfHoney
-  Sprite: {fileID: 21300000, guid: 6f05ab97dd9ac5d43a8db8549da82b49, type: 3}
+  Sprite: {fileID: 21300000, guid: 3174406d485fe794e835a43f1ab24e00, type: 3}
   Model: {fileID: 6099716563034130458, guid: 5e98fddb46d3f1c4f9a8a5bdcdb174e2, type: 3}

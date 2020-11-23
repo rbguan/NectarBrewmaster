@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Herb_Honey
   m_EditorClassIdentifier: 
   IngredientName: HbHoney
-  Sprite: {fileID: 21300000, guid: 0fe5f54a1a77b33439344dca8aecf2f5, type: 3}
+  Sprite: {fileID: 21300000, guid: 154132b87fdc7c04b9fba9c129d0db82, type: 3}
   Model: {fileID: 11164676986805793, guid: 63ae3561af243004b9f2d08ae0cb32a4, type: 3}

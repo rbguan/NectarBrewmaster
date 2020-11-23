@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Honey
   m_EditorClassIdentifier: 
   IngredientName: Honey
-  Sprite: {fileID: 21300000, guid: 51379db67778c6c4b917b8eca8a4c4f0, type: 3}
+  Sprite: {fileID: 21300000, guid: 8b29c41b2f4e44b4988c27d584ff86fd, type: 3}
   Model: {fileID: 1560591285256121607, guid: 1abb7b992c8361a43994800245966f2b, type: 3}

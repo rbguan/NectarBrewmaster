@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EmptyCup
   m_EditorClassIdentifier: 
   IngredientName: EmptyBoi
-  Sprite: {fileID: 21300000, guid: 51379db67778c6c4b917b8eca8a4c4f0, type: 3}
+  Sprite: {fileID: 21300000, guid: 916d26badf2a1494ca684313efcc6691, type: 3}
   Model: {fileID: 7192062813485973645, guid: 9680abde9aa233149aee77aa3784869d, type: 3}

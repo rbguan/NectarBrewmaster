@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Sunflower
   m_EditorClassIdentifier: 
   IngredientName: Sunflower
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 689d1ada0c1a4754796f0ccba7af88d6, type: 3}
   Model: {fileID: 5854389651592741936, guid: 6db6433bfe17b5645acb1cda653a371a, type: 3}
