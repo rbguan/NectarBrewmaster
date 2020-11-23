@@ -21,6 +21,7 @@ namespace Assets.Scripts
         public Ingredient curIngredient;
         private bool beeSpawned;
         public Recipes menu;
+        public Recipes allrecipes;
         private List<Ingredient> menuItems;
         private Ingredient beesOrder;
         private GameObject currentBee;
@@ -42,7 +43,6 @@ namespace Assets.Scripts
         {
             curIngredient = cup.currentDrink;
             cup.ResetCup();
-            
             drinkHeld = Instantiate(curIngredient.Model, cupSpawnLocation, transform.rotation) as GameObject;
             drinkHeld.transform.parent = transform;
         }
@@ -54,17 +54,11 @@ namespace Assets.Scripts
         private IEnumerator beeLife()
         {
             yield return spawnBee();
-            yield return beeOrder();
             if(!beeSpawned){
                 StartCoroutine(beeLife());
             }
-            
         }
-        private IEnumerator beeOrder()
-        {
-            beesOrder = randomMenuItem();
-            yield return null;
-        }
+        
 
         private IEnumerator spawnBee()
         {
@@ -84,5 +78,23 @@ namespace Assets.Scripts
             }
             yield return beeOrder();
         }
+        private IEnumerator beeOrder()
+        {
+            curState = BeeState.Ordering;
+            beesOrder = randomMenuItem();
+            Recipe beeOrderRecipe = allrecipes.getRecipeFromEndIngredient(beesOrder);
+            currentBee.GetComponent<Bee>().setRecipeInfo(beeOrderRecipe);
+            Debug.Log("orderin " + beesOrder.IngredientName);
+            yield return null;
+        }
+
+        private IEnumerator beeWait()
+        {
+            curState = BeeState.Waiting;
+            while(curState == BeeState.Waiting){
+                yield return null;
+            }
+        }
     }
+
 }

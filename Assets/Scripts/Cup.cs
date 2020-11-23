@@ -35,12 +35,12 @@ namespace Assets.Scripts
         }
         public bool CanPutIngredient(Ingredient newIngredient)
         {
-            // Debug.Log("***************************\nTrying to put " +newIngredient.IngredientName+ "into cup containing: ");
-            // foreach(Ingredient i in inCup){
-            //     Debug.Log(i.IngredientName);
-            // }
-            // Debug.Log("**************************");
-            if(inCup.Contains(newIngredient)){
+            Debug.Log("***************************\nTrying to put " +newIngredient.IngredientName+ "into cup containing: ");
+            foreach(Ingredient i in inCup){
+                Debug.Log(i.IngredientName);
+            }
+            Debug.Log("**************************");
+            if(inCup.Contains(newIngredient) || inCup.Count >= 2){
                 Debug.Log("can't put" + newIngredient.IngredientName);
                 return false;
             } else if(newIngredient.IngredientName.Equals("Honey") && inCup.Contains(nectar)){
@@ -68,6 +68,11 @@ namespace Assets.Scripts
             if(drink != null){
                 Destroy(DisplayedDrink);
                 currentDrink = drink;
+                
+                // Debug.Log("current drink: " + drink.IngredientName);
+                // foreach(Ingredient i in inCup){
+                //     Debug.Log(i.IngredientName);
+                // }
                 DisplayedDrink = Instantiate(drink.Model, cupSpawnLocation, transform.rotation) as GameObject;
                 DisplayedDrink.transform.parent = transform;
             }

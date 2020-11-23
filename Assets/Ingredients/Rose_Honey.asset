@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Rose_Honey
   m_EditorClassIdentifier: 
   IngredientName: RsHoney
-  Sprite: {fileID: 0}
-  Model: {fileID: -927199367670048503, guid: 1183e66ebe192a54fa7703ff671b5d8c, type: 3}
+  Sprite: {fileID: 21300000, guid: fa2e4c1eba8834d46b1343d759713367, type: 3}
+  Model: {fileID: 2186719847487971269, guid: 58cd84d4c04bd86458e324c68a31c6af, type: 3}
