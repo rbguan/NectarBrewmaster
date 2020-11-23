@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientName: RoseDelight
   Sprite: {fileID: 0}
-  Model: {fileID: 100000, guid: 4bf0b5e6d505046d0ae41ea25c46a897, type: 3}
+  Model: {fileID: -927199367670048503, guid: 0c8a591bf10b0bf4ea958c89d505f845, type: 3}

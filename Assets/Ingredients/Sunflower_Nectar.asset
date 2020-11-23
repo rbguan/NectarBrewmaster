@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientName: SfNectar
   Sprite: {fileID: 0}
-  Model: {fileID: 0}
+  Model: {fileID: -927199367670048503, guid: 8d86ac21883e2404aa1f21363bc3893c, type: 3}

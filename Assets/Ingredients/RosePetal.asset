@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientName: Rose Petal
   Sprite: {fileID: 0}
-  Model: {fileID: 100000, guid: 137df3466902d424983627567b86735e, type: 3}
+  Model: {fileID: -927199367670048503, guid: ba4bf3b54475f7643be185801bd10208, type: 3}
