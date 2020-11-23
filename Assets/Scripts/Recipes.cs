@@ -33,6 +33,16 @@ namespace Assets.Scripts
             }
             return endIngredients;
         }
+
+        public Recipe getRecipeFromEndIngredient(Ingredient endIngr)
+        {
+            foreach(Recipe r  in _AvailableRecipes){
+                if(r.EndIngredient.IngredientName.Equals(endIngr.IngredientName)){
+                    return r;
+                }
+            }
+            return null;
+        }
     }
 
     [System.Serializable]
@@ -46,6 +56,7 @@ namespace Assets.Scripts
         public Ingredient EndIngredient;
 
         public bool doIngredientsMatch(HashSet<Ingredient> inCup){
+            
             return inCup.SetEquals(Ingredients);
         }
         public void OnBeforeSerialize()

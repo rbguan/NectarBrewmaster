@@ -7078,8 +7078,8 @@ MonoBehaviour:
     type: 3}
   DisplayedDrink: {fileID: 0}
   currentDrink: {fileID: 0}
-  honey: {fileID: 0}
-  nectar: {fileID: 0}
+  honey: {fileID: 11400000, guid: a47bc5e1eea133f488aaa6728f458a00, type: 2}
+  nectar: {fileID: 11400000, guid: e3ad2e86b22daf84995b9c01a07d2c2a, type: 2}
   cupSpawnVerticalOffset: 0.00115
 --- !u!1 &1552759637993626448
 GameObject:

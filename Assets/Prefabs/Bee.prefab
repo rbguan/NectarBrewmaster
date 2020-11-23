@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 1180398995465848585}
   - component: {fileID: 5598100150704719989}
   - component: {fileID: 9125029494545356111}
+  - component: {fileID: 5953291374540970806}
   m_Layer: 0
   m_Name: Bee
   m_TagString: Untagged
@@ -450,6 +451,26 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   gazeTimer: 0
+--- !u!114 &5953291374540970806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6841315319631204060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 356aca021f723a64cbb59f4de055e232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: {fileID: 0}
+  patience: 0
+  SmallSpeechBubble: {fileID: 8485272851220436736}
+  SmallSpeechBubbleImage: {fileID: 6941842519773487091}
+  LargeSpeechBubble: {fileID: 4237077457540917547}
+  LargeSpeechBubbleImageL: {fileID: 3301791464838790842}
+  LargeSpeechBubbleImageM: {fileID: 3678529052491706917}
+  LargeSpeechBubbleImageR: {fileID: 2147620752220281669}
 --- !u!1 &7928040478367065734
 GameObject:
   m_ObjectHideFlags: 0
